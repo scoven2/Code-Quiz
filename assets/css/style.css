@@ -1,141 +1,149 @@
-        
-        #wrapper {
-            position: absolute;
-            left: 30%;
-            top: 20%;
-            width: 500px;
-            height: 500px;
-            border: 1px solid purple;
-        }
-        #startTime {
-            background-color: purple;
-            margin-left: 33%;
-            padding: 15px 32px;
-            font-size: 20px;
-            color: white;
-        }
-        #questionsDiv {
-            margin: 20px;
-        }
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
-        #currentTime {
-            float: right;
-        }
+a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(0, 128, 100);
+    padding: 10px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+}
 
-        #goBack {
-            background-color: purple;
-            position: relative;
-            padding: 10px;
-            font-size: 20px;
-            color: white;
-            top: 30%;
-            left: 55%;
-            width: auto;
-            text-align: center;
-            text-decoration: none;
-        }
+a:hover {
+    background-color: rgb(157, 123, 182);
+}
 
+#wrapper {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    width: 500px;
+    height: 300px;
+    border: 5px solid rgb(0, 128, 100);
+    border-radius: 8px;
+    font-weight: bold;
+}
 
+#startTime {
+    background-color: rgb(0, 128, 100);
+    margin-left: 33%;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+}
 
-        #clear {
-            background-color: purple;
-            position: relative;
-            padding: 10px;
-            font-size: 20px;
-            color: white;
-            top: 30%;
-            right: 5%;
-            text-align: center;
-        }
+#startTime:hover {
+    background-color: rgb(157, 123, 182);
+}
 
-        button {
-            border-radius: 8px;
-        }
+#questionsDiv {
+    margin: 20px;
+}
 
-        textarea {
-            width: 90%;
-            margin: 20px;
-        }
+#currentTime {
+    float: right;
+    padding: 8px;
+}
 
-        #Submit {
-            background-color: purple;
-            margin-left: 33%;
-            padding: 15px 32px;
-            font-size: 20px;
-            color: white;
-        }
+#goBack {
+    background-color: rgb(0, 128, 100);
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    left: 55%;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
 
-        label {
-            margin-right: 10px;
-        }
-        input {
-            margin-bottom: 20px;
-            width: 50%;
-            border: 1px solid lightgray;
-        }
+#clear {
+    background-color: rgb(0, 128, 100);
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    right: 5%;
+    text-align: center;
+}
 
-        h1 {
-            text-align: center;
-        }
+button {
+    border-radius: 8px;
+}
 
-        li {
-            background-color: purple;
-            margin-top: 10px;
-            padding: 5px 15px;
-            width: 80%;
-            font-size: 18px;
-            color: white;
-        }
+textarea {
+    width: 90%;
+    margin: 20px;
+}
 
-        #createDiv {
-            margin-top: 20px;
-            border-top: 1px solid lightgray;
-        }
+#Submit {
+    background-color: rgb(0, 128, 100);
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
 
-        /* Start media queries */
-        /* A Media Query max-width: 786px */
+label {
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    background-color: rgb(0, 128, 100);
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+}
+
+li:hover {
+    background-color: rgb(157, 123, 182);
+}
+
+#createDiv {
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 786px) {
-    /* Resized content to fit 786px  */
-        body {
-            max-width: 786px;
-        }
-    /* Resized main-content to fit 786px  */
+    body {
+        max-width: 786px;
+    }
     #wrapper {
         position: absolute;
         left: 20%;
     }
-
     a {
         margin-left: 20%;
     }
-        #goBack {
-            
-            position: relative;
-            left: 55%;
-        }
-
-        #clear {
-            
-            position: relative;
-            right: 5%;
-            
-        }
+    #goBack {
+        position: relative;
+        left: 55%;
     }
-        
-    /* A Media Query max-width: 640px */
-    @media screen and (max-width: 640px) {
-     /* Resized content to fit 640px  */
-     body {
-            min-width: 640px;
-        }
-    /* Resized main-content to fit 640px  */
+    #clear {
+        position: relative;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        min-width: 640px;
+    }
     #wrapper {
         position: absolute;
         left: 10%;
     }
-      a {
-          margin-left: 10%;
-      }
-
-     
+    a {
+        margin-left: 10%;
+    }
 }
