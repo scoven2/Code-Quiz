@@ -55,9 +55,9 @@ function render(questionIndex) {
     questionsDiv.innerHTML = "";
     ulCreate.innerHTML = "";
     for (var i = 0; i < questions.length; i++) {
-        var userQuestions = questions[questionIndex].title;
+        var userQuestion = questions[questionIndex].title;
         var userChoices = questions[questionIndex].choices;
-        questionsDiv.textContent = userQuestions;
+        questionsDiv.textContent = userQuestion;
     }
     userChoices.forEach(function(newItem) {
         var listItem = document.createElement("li")
@@ -159,7 +159,7 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            window.location.replace("./HighScores.html");
+            window.location.replace("HighScores.html");
         }
     });
 
